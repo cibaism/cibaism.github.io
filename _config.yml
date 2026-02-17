@@ -16,7 +16,7 @@ timezone:
 
 title: Aitor Segura (Aka. Cibaism) # the main title
 
-tagline: Ethical Hacker | CRTO, eJPT, CRTA, CRT-COI, AD-RTS, WEB-RTA, API-RTA | ProLab Projects: P.O.O, Dante, Zephyr, XEN, FullHouse, Offshore, Hades, Puppet, Mythical # it will display as the subtitle
+tagline: A text-focused Jekyll theme # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Ethical Hacker
