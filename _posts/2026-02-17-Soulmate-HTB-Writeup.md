@@ -5,6 +5,8 @@ categories: [Writeups, Easy]
 tags: [Linux, CVE-2025-31161, WebApp, RCE, Port Forwarding, SSH]
 ---
 
+<img alt="image" src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2c47fcf9c85c7fbdda73a9c1b54fd60e.png">
+
 ```shell
 sudo nmap -p- -sSVC --open --min-rate 7000 -v -n -Pn 10.129.132.160 -oN Ports.txt
 PORT   STATE SERVICE VERSION
