@@ -1,7 +1,7 @@
 ---
-title: Soulmate HTB-Writeup
+title: Giveback HTB-Writeup
 date: 2026-02-22 18:49 +0100
-categories: [Writeups, Medium]
+categories: [HTB-Writeups, Medium]
 tags: [Linux, CVE-2024-5932, CMS, RCE, Kubernetes, SSH,SUID]
 ---
 
