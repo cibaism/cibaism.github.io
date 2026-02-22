@@ -5,6 +5,8 @@ categories: [HTB-Writeups, Medium]
 tags: [Linux, CVE-2024-5932, CMS, RCE, Kubernetes, SSH,SUID]
 ---
 
+<img alt="image" src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/243db542f3168e3393c4cabf699a665e.png">
+
 ```sh
 IP=10.129.69.104
 ```
