@@ -1,7 +1,7 @@
 ---
 title: Soulmate HTB-Writeup
 date: 2026-02-17 18:49 +0100
-categories: [Writeups, Easy]
+categories: [HTB-Writeups, Easy]
 tags: [Linux, CVE-2025-31161, WebApp, RCE, Port Forwarding, SSH]
 ---
 
