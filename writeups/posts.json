@@ -35,5 +35,23 @@
     ],
     "summary": "Bypass de autenticación en CrushFTP (CVE-2025-31161), acceso al sistema y port forwarding por SSH hacia un servicio interno para llegar a root.",
     "icon": "https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2c47fcf9c85c7fbdda73a9c1b54fd60e.png"
+  },
+  {
+    "slug": "facts",
+    "title": "Facts",
+    "date": "2026-11-24",
+    "category": "HTB Machine",
+    "difficulty": "Easy",
+    "os": "Linux",
+    "tags": [
+      "Linux",
+      "CVE-2024-46987",
+      "WebApp",
+      "LFI",
+      "Sudo",
+      "SSH"
+    ],
+    "summary": "Extracción de certificado de SSH de un usuario (CVE-2024-46987), acceso al sistema y elevación de privilegios mediante permisos de Sudo de forma custom.",
+    "icon": "https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a0efb09d-2937-4e7c-bd04-ba2e4386b8b1.png"
   }
 ]
