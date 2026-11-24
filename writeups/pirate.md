@@ -1,6 +1,5 @@
 ![Pirate](https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a11e354b-d5c2-4dd6-8f93-dcab57e27920.png)
 
->[!Info]
 >As is common in real life pentests, you will start the Pirate box with credentials for the following account **pentest** / **p3nt3st2025!&**
 
 ```sh
@@ -488,9 +487,8 @@ Tras adquir las cuentas `MS01$` y `EXCH01$` revisamos las DACL que podemos abusa
 <img width="2438" height="368" alt="imagen" src="https://github.com/user-attachments/assets/32a06e07-32f0-4ed2-9e68-89eaae34e277" />
 
 Para poder adquir una shell al sistema podemos abusar de ReadGMSAPassword.
->[!Info] 
 >ReadGMSAPassword es un permiso de Active Directory que permite leer la contraseña administrada de una cuenta gMSA (Group Managed Service Account).
-Si tienes ese permiso sobre una gMSA, puedes recuperar su contraseña y usarla para autenticarte como esa cuenta. Windows rota esa contraseña automáticamente, así que no suele ser una contraseña que el administrador cambie a mano.
+>Si tienes ese permiso sobre una gMSA, puedes recuperar su contraseña y usarla para autenticarte como esa cuenta. Windows rota esa contraseña automáticamente, así que no suele ser una contraseña que el administrador cambie a mano.
 
 ```sh
 ╭─ root [at] exegol-htb 🎭 [on]  /home/htb/labs/Pirate
