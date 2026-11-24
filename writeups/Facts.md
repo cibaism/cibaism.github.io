@@ -1,6 +1,3 @@
----
-noteID: 0bc4cbee-38b0-4343-853b-c61d1d836583
----
 ![Facts](https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a0efb09d-2937-4e7c-bd04-ba2e4386b8b1.png)
 
 ```sh
@@ -245,17 +242,21 @@ by Ben "epi" Risher 🤓                 ver: 2.13.0
 302      GET        0l        0w        0c http://facts.htb/admin => http://facts.htb/admin/login
 ```
 
-![[Pasted image 20261124150226.png]]
+<img width="942" height="890" alt="imagen" src="https://github.com/user-attachments/assets/73411e5d-4bc5-4b4a-9761-0df3ea0a0dbb" />
+
 
 Creamos cuenta:
 ```
 cibaism / cibaism
 ```
 
-![[Pasted image 20261124150553.png]]
+<img width="718" height="956" alt="imagen" src="https://github.com/user-attachments/assets/916100cc-49f3-40b2-a3eb-9ab0a0ee137a" />
+
 
 Vemos que hay versiones y un CMS.
-![[Pasted image 20261124151219.png]]
+
+<img width="1520" height="860" alt="imagen" src="https://github.com/user-attachments/assets/415c194c-8131-481d-bc74-0b9744b4fb41" />
+
 
 https://github.com/owen2345/camaleon-cms/security/advisories/GHSA-cp65-5m9r-vc2c
 
