@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "giveback",
+    "title": "Giveback",
+    "date": "2026-02-22",
+    "category": "HTB Machine",
+    "difficulty": "Medium",
+    "os": "Linux",
+    "tags": [
+      "Linux",
+      "CVE-2024-5932",
+      "CMS",
+      "RCE",
+      "Kubernetes",
+      "SSH",
+      "SUID"
+    ],
+    "summary": "RCE en WordPress mediante el plugin GiveWP (CVE-2024-5932), movimiento dentro de un clúster Kubernetes y escalada de privilegios hasta root.",
+    "icon": "https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/243db542f3168e3393c4cabf699a665e.png"
+  },
+  {
+    "slug": "soulmate",
+    "title": "Soulmate",
+    "date": "2026-02-17",
+    "category": "HTB Machine",
+    "difficulty": "Easy",
+    "os": "Linux",
+    "tags": [
+      "Linux",
+      "CVE-2025-31161",
+      "WebApp",
+      "RCE",
+      "Port Forwarding",
+      "SSH"
+    ],
+    "summary": "Bypass de autenticación en CrushFTP (CVE-2025-31161), acceso al sistema y port forwarding por SSH hacia un servicio interno para llegar a root.",
+    "icon": "https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2c47fcf9c85c7fbdda73a9c1b54fd60e.png"
+  }
+]
