@@ -24,7 +24,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   --disp:'Chakra Petch',system-ui,sans-serif;
   --sans:'IBM Plex Sans',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --nav:68px;--max:1240px;
+  --nav:68px;--max:1240px;--post:1200px;
 }
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15.5px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -340,7 +340,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--line);background:v
 .bload{padding:2.8rem;text-align:center;font-family:var(--mono);font-size:.8rem;color:var(--dim)}
 
 /* ── post ── */
-.pvwrap{padding-top:calc(var(--nav) + 2.6rem) !important;max-width:840px}
+.pvwrap{padding-top:calc(var(--nav) + 2.6rem) !important;max-width:var(--post)}
 .readbar{position:fixed;top:0;left:0;height:3px;z-index:950;background:linear-gradient(90deg,var(--red),var(--amber));width:0}
 .backlink{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-bottom:1.9rem}
 .backlink:hover{color:var(--red)}
@@ -360,7 +360,8 @@ footer{position:relative;z-index:2;border-top:1px solid var(--line);background:v
 .toc li a.on{color:var(--red);border-color:var(--red)}
 .toc li.h3 a{padding-left:1.6rem;font-size:.8rem}
 @media(min-width:1360px){
-  .toc{position:fixed;left:calc((100vw - 840px)/2 - 270px);top:110px;width:236px;max-height:calc(100vh - 150px);margin:0;display:flex;flex-direction:column;z-index:5}
+  .pvwrap.has-toc{max-width:calc(var(--post) + 270px);padding-left:calc(270px + 2.4rem)}
+  .toc{position:fixed;left:max(2.4rem,calc((100vw - var(--post) - 270px)/2 + 2.4rem));top:110px;width:236px;max-height:calc(100vh - 150px);margin:0;display:flex;flex-direction:column;z-index:5}
   .toc ul{max-height:none;flex:1}
   .toc.col ul{display:block}
   .toc.col .toc-h svg{transform:none}
@@ -925,6 +926,7 @@ async function renderPost(slug) {
   const idx = posts.findIndex(p => p.slug === slug);
   const p = posts[idx];
   $('#tocBox').style.display = 'none';
+  $('.pvwrap').classList.remove('has-toc');
   $('#pvNext').innerHTML = '';
   if (!p) {
     $('#pvHead').innerHTML = '';
@@ -987,6 +989,7 @@ async function renderPost(slug) {
   if (heads.length > 1) {
     $('#tocList').innerHTML = heads.map(h => `<li class="${h.tagName.toLowerCase()}"><a data-target="${h.id}">${esc(h.textContent)}</a></li>`).join('');
     $('#tocBox').style.display = '';
+    $('.pvwrap').classList.add('has-toc');
   }
 
   const prev = posts[idx + 1], next = posts[idx - 1];
@@ -1123,6 +1126,7 @@ document.addEventListener('visibilitychange', () => document.body.classList.togg
 if ((navigator.hardwareConcurrency || 8) <= 4 || navigator.connection?.saveData) document.body.classList.add('low-power');
 
 new IntersectionObserver(([e]) => e.target.classList.toggle('live', e.isIntersecting)).observe($('.hero'));
+navigator.serviceWorker?.getRegistrations().then(rs => rs.forEach(r => r.unregister())).catch(() => {});
 
 renderStatic();
 route();
