@@ -1,6 +1,3 @@
----
-noteID: c02241b1-4afa-40c4-96bf-8bc2b125aa93
----
 ![Pirate](https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a11e354b-d5c2-4dd6-8f93-dcab57e27920.png)
 
 >[!Info]
@@ -466,7 +463,8 @@ Powered by @g0h4n_0
 RustHound-CE Enumeration Completed at 18:54:36 on 11/24/26! Happy Graphing!
 ```
 
-![[Pasted image 20261124190249.png]]
+<img width="2422" height="1024" alt="imagen" src="https://github.com/user-attachments/assets/49bba0cb-d1d3-4891-992b-9d9f2cfca117" />
+
 
 Vemos un poco el estado del dominio. Al ver el grupo `PRE-WINDOWS 2000 COMPUTERS` podemos tratar de realizar el ataque `pre2k`, para adquirir el control de alguna cuenta de alguna máquina.
 ```sh
@@ -486,8 +484,8 @@ PRE2K       DC01.pirate.htb 389    DC01             [+] Successfully obtained TG
 ```
 
 Tras adquir las cuentas `MS01$` y `EXCH01$` revisamos las DACL que podemos abusar.
-![[Pasted image 20261124190653.png]]
 
+<img width="2438" height="368" alt="imagen" src="https://github.com/user-attachments/assets/32a06e07-32f0-4ed2-9e68-89eaae34e277" />
 
 Para poder adquir una shell al sistema podemos abusar de ReadGMSAPassword.
 >[!Info] 
@@ -866,7 +864,8 @@ SMB         192.168.100.1   445    DC01             [+] pirate.htb\a.white:E2nvA
 ```
 
 Finalmente, tenemos el path final para adquirir el DC01.
-![[Pasted image 20261124201936.png]]
+
+<img width="2440" height="260" alt="imagen" src="https://github.com/user-attachments/assets/0af11deb-1874-4221-b797-928f32a9f00a" />
 
 Primero le cambiaremos la contraseña a `a.white_adm`.
 ```sh
