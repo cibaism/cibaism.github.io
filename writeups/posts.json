@@ -53,5 +53,27 @@
     ],
     "summary": "Extracción de certificado de SSH de un usuario (CVE-2024-46987), acceso al sistema y elevación de privilegios mediante permisos de Sudo de forma custom.",
     "icon": "https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a0efb09d-2937-4e7c-bd04-ba2e4386b8b1.png"
+  },
+  {
+    "slug": "pirate",
+    "title": "Pirate",
+    "date": "2026-11-24",
+    "category": "HTB Machine",
+    "difficulty": "Hard",
+    "os": "Windows",
+    "tags": [
+      "Windows",
+      "Active Directory",
+      "Pre2k",
+      "gMSA",
+      "Ligolo",
+      "NTLM Relay",
+      "RBCD",
+      "S4U",
+      "DPAPI",
+      "SPN-Jacking"
+    ],
+    "summary": "Acceso inicial mediante cuentas de equipo Pre2k, lectura de contraseñas gMSA y pivoting con Ligolo. Escalada en WEB01 mediante coerción NTLM, relay y RBCD; robo de credenciales de a.white y abuso de delegación restringida con SPN-jacking para comprometer el dominio.",
+    "icon": "https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a11e354b-d5c2-4dd6-8f93-dcab57e27920.png"
   }
 ]
